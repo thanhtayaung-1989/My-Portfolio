@@ -1,0 +1,35 @@
+LAbs
+
+buy new EBS (for Window)
+
+EBS snapshot 
+
+build window instance in another regions
+
+diskmgmt.msc
+
+attach the new volume 
+
+
+Linux SMB Server
+
+install SAMBA
+-------------------------sudo apt install samba -y
+
+systemctl status smbd (checking samba status)
+
+sudo adduser sambauser
+
+sudo smbpasswd -a sambauser
+
+cd /home/sambauser
+
+mkdir Share_Folder
+
+
+chown sambauser Share_Folder
+chgrp
+
+nano /etc/samba/smb.conf
+
+service smbd restart
